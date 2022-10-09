@@ -1,0 +1,58 @@
+//colors
+$body-background-color: rgb(160, 26, 26);
+$form-background-color: white;
+$input-color: white;
+$headlines-color: white;
+
+body {
+  background-color: $body-background-color;
+}
+.center {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+    color: $headlines-color;
+    margin: 3vw;
+}
+
+/*#contactform {
+  background-color: $form-background-color;
+  #contactform input,
+  #contactform textarea {
+    background-color: $input-color;
+  }
+}*/
+#contactform {
+  background-color: $form-background-color;
+  input,
+  textarea {
+    background-color: $input-color;
+    flex: 2;
+    width: 250px;
+  }
+
+  @media (max-width: 900px) {
+    & {
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+  @mixin flex-container() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}

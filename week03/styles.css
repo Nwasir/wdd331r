@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(160, 26, 26);
+}
+
+.center {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: white;
+  margin: 3vw;
+}
+
+/*#contactform {
+  background-color: $form-background-color;
+  #contactform input,
+  #contactform textarea {
+    background-color: $input-color;
+  }
+}*/
+#contactform {
+  background-color: white;
+}
+#contactform input,
+#contactform textarea {
+  background-color: white;
+  flex: 2;
+  width: 250px;
+}
+@media (max-width: 900px) {
+  #contactform {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contactform .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

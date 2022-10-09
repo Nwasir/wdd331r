@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+$background-color: #666;
+$body-background-color: white;
+$text-color: #333;
+$headlines-color: blue;
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    color: $text-color;
+}
+h1, h2, h3 {
+    font-family: 'lora', serif;
+    text-align: center;
+           
+}
+div header h1{
+    width: 160px;
+    word-break: break-all;
+    margin-left: 70px;
+}
+div header nav ul li{
+    margin-top: 10px;
+    list-style-type: none;
+   text-align: center;
+}
+div header nav ul li a:visited{background-color: $background-color ;
+}
+div header nav ul li a:active{
+    background-color: #DEB887;
+}
+div header nav ul li a:hover{
+    background-color: #00ddff;
+}
+
+ a {   
+    text-decoration: none; 
+    color: $headlines-color;
+ }
+
+ main article div.post-date{text-align: right; margin: 2vw;}
+
+ div main {margin: 2vw; width: 100%; }
+ div main article figure img{ width: 100%;}
+ article section p a{ color: rgb(163, 159, 159);}
